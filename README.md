@@ -1,63 +1,81 @@
 # Bookstore API
-This project is a RESTful API for managing a books inventory.
 
-# Table of Contents
+This project is a RESTful API for managing a book inventory.
 
-1. Features
-2. Prerequisites
-3. Installation
-4. Usage
-5. API Endpoints
+## Table of Contents
 
-# Features
+1. [Features](#features)
+2. [Prerequisites](#prerequisites)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [API Endpoints](#api-endpoints)
 
-Manage book inventory (add, update, delete books)
-User authentication and authorization
-Search functionality for books by id
+## Features
 
-# Prerequisites
+- Manage book inventory (add, update, delete books)
+- User authentication and authorization
+- Search functionality for books by ID
 
-Python 3.7+
-Django 3.2+
-Django REST Framework 3.12+
+## Prerequisites
 
-# Installation
+- Python 3.7+
+- Django 3.2+
+- Django REST Framework 3.12+
 
-Clone the repository or download the zip:
-Copygit clone https://github.com/harshongithub/bookstore_api.git
-cd bookstore_api
+## Installation
 
-Create a virtual environment and activate it:
-Copypython -m venv venv # if you clone the repo
-python -m venv .venv # if downloaded zip
+1. **Clone the Repository** or **Download the Zip**:
 
-# On Windows, use `venv\Scripts\activate`
-# On Mac ,use source venv/bin/activate 
+   ```bash
+   git clone https://github.com/harshongithub/bookstore_api.git
+   cd bookstore_api
+   ```
 
-Install the required packages:
-Copypip install -r requirements.txt
+2. **Create and Activate a Virtual Environment**:
 
-Apply migrations:
-Copypython manage.py migrate
+   ```bash
+   python -m venv venv 
+   ```
 
-Create a superuser:
-Copypython manage.py createsuperuser
+   - **On Windows**: `venv\Scripts\activate`
+   - **On macOS/Linux**: `source venv/bin/activate`
 
+3. **Install the Required Packages**:
 
-# Usage
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Apply Migrations**:
+
+   ```bash
+   python manage.py migrate
+   ```
+
+5. **Create a Superuser**:
+
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+## Usage
 
 To run the development server:
-Copypython manage.py runserver
-The API will be available at http://localhost:8000.
 
-# API Endpoints
+```bash
+python manage.py runserver
+```
 
-/api/books/: List all books or create a new book (Authentication required for Creating new book)
-/api/books/<id>/: Retrieve, update, or delete a specific book (Authentication required for Update and delete)
-/api/login/: To login 
-/api/register/: To register as a new user
-/api/token/refresh/: To get new access token
-/api/admin/: to open admin panel
+The API will be available at [http://localhost:8000](http://localhost:8000).
 
-For detailed documentation of the API endpoints, visit [documentation](https://documenter.getpostman.com/view/38144718/2sAXjRV9E1)
+## API Endpoints
+
+- **`/api/books/`**: List all books or create a new book (Authentication required for creating a new book)
+- **`/api/books/<id>/`**: Retrieve, update, or delete a specific book (Authentication required for update and delete)
+- **`/api/login/`**: To log in
+- **`/api/register/`**: To register as a new user
+- **`/api/token/refresh/`**: To get a new access token
+- **`/api/admin/`**: To access the admin panel
+
+For detailed documentation of the API endpoints, visit [Postman Documentation](https://documenter.getpostman.com/view/38144718/2sAXjRV9E1).
 
