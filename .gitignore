@@ -1,0 +1,33 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+/media
+*.sqlite3
+*.pyc
+*.pyo
+.DS_Store
+
+# Virtual environments #
+venv/
+env/
+__pycache__/
+
+# IDEs #
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables #
+.env
+
+# Static and media files #
+/static/
+/media/
+
+# JWT tokens and cache #
+*.token
+*.cache

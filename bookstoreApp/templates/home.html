@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block body-content %}
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="{% static "images/homepage_books.jpg" %}" class="d-block mx-lg-auto img-fluid rounded-5" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to Bookstore</h1>
+      <p class="lead">It is an api which can let you perform differnet operations on the books stored in the database, I have restriceted DELETE, POST and PATCH request to Authorized user only, You can go to "api/login" or "api/register" endpoints to login or register. Once register or logged-in you will be able to perform all CRUD opertaion. You can view the books without any authorization by simply clicking on API button below or going to endpoint "api/books". Read the documentations for more.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start ">
+        <a href="/api/books/" class="btn btn-primary btn-lg px-4">API</a>
+        <a href="https://documenter.getpostman.com/view/38144718/2sAXjRV9E1" class="btn btn-secondary btn-lg px-4">Documentation</a>
+      </div>
+    </div>
+  </div>
+</div>{% endblock %}
