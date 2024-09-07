@@ -1,7 +1,7 @@
-#Bookstore API
+# Bookstore API
 This project is a RESTful API for managing a books inventory.
 
-#Table of Contents
+# Table of Contents
 
 Features
 Prerequisites
@@ -9,19 +9,19 @@ Installation
 Usage
 API Endpoints
 
-#Features
+# Features
 
 Manage book inventory (add, update, delete books)
 User authentication and authorization
 Search functionality for books by id
 
-#Prerequisites
+# Prerequisites
 
 Python 3.7+
 Django 3.2+
 Django REST Framework 3.12+
 
-#Installation
+# Installation
 
 Clone the repository or download the zip:
 Copygit clone https://github.com/harshongithub/bookstore_api.git
@@ -44,13 +44,13 @@ Create a superuser:
 Copypython manage.py createsuperuser
 
 
-#Usage
+# Usage
 
 To run the development server:
 Copypython manage.py runserver
 The API will be available at http://localhost:8000.
 
-#API Endpoints
+# API Endpoints
 
 /api/books/: List all books or create a new book (Authentication required for Creating new book)
 /api/books/<id>/: Retrieve, update, or delete a specific book (Authentication required for Update and delete)
