@@ -28,7 +28,7 @@ Copygit clone https://github.com/harshongithub/bookstore_api.git
 cd bookstore_api
 
 Create a virtual environment and activate it:
-Copypython -m venv venv #if you clone the repo
+Copypython -m venv venv # if you clone the repo
 python -m venv .venv # if downloaded zip
 
 # On Windows, use `venv\Scripts\activate`
