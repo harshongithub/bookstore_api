@@ -50,6 +50,7 @@ This project is a RESTful API for managing a book inventory.
 
    ```bash
    python manage.py migrate
+   python manage.py makemigration
    ```
 
 5. **Create a Superuser**:
