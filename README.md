@@ -1,5 +1,6 @@
 Bookstore API
 This project is a RESTful API for managing a books inventory.
+
 Table of Contents
 
 Features
