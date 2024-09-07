@@ -3,11 +3,11 @@ This project is a RESTful API for managing a books inventory.
 
 # Table of Contents
 
-Features
-Prerequisites
-Installation
-Usage
-API Endpoints
+1. Features
+2. Prerequisites
+3. Installation
+4. Usage
+5. API Endpoints
 
 # Features
 
